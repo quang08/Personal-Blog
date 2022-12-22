@@ -5,15 +5,7 @@ import moment from "moment";
 
 function PostCard({ post }) {
   return (
-    <div className="bg-white transition duration-300 hover:-translate-y-2  shadow-2xl rounded-lg px-3 lg:p-8 pb-12 mb-8">
-      <div className="relative overflow-hidden shadow-md pb-80 mb-6">
-        <img
-          className="object-top absolute h-80 w-full shadow-lg rounded-t-lg lg:rounded-lg"
-          src={post.featuredImage.url}
-          alt={post.title}
-        />
-      </div>
-
+    <div className="bg-white transition duration-300 hover:-translate-y-2  shadow-2xl rounded-lg px-3 lg:p-8 pb-12 mb-8 md:py-2 sm:py-4">
       <div className="flex justify-between font-medium text-gray-700 mb-3 px-1">
         <div>
           <svg
@@ -33,7 +25,7 @@ function PostCard({ post }) {
             {moment(post.createdAt).format("MMM DD, YYYY")}
           </span>
         </div>
-        <p className="ml-5 text-sm rounded-full inline transition duration-300 bg-gray-400 hover:bg-blue-400 px-2 py-2">
+        <p className="ml-5 text-sm rounded-full inline transition duration-300 bg-gray-200 hover:bg-blue-400 px-2 py-2">
           {post.categories[0].name}
         </p>
       </div>
@@ -67,7 +59,7 @@ function PostCard({ post }) {
             Continue Reading
           </span>
         </Link>
-        
+
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"

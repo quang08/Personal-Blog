@@ -1,7 +1,8 @@
 import Head from "next/head";
 import Image from "next/image";
-import { PostCard, PostWidget, Categories, Header } from "../components";
+import { PostCard, PostWidget, Categories, Header, Bio } from "../components";
 import { getPosts } from "../services";
+import { CategoryCarousel } from "../sections/index";
 
 export default function Home({ posts }) {
   return (
@@ -13,16 +14,18 @@ export default function Home({ posts }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      <CategoryCarousel />
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
         <div className="lg:col-span-8 col-span-1">
           {posts.map((post, i) => (
             <PostCard key={i} post={post.node} />
           ))}
         </div>
-        <div className="lg: col-span-4 col-span-1">
+        <div className="lg:col-span-4 col-span-1">
           <div className="lg: sticky relative top-8">
-            <Categories />
+            <Bio/>
             <PostWidget />
+            <Categories />
           </div>
         </div>
       </div>

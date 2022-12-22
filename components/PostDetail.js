@@ -7,13 +7,13 @@ function PostDetail({ post }) {
 
     if (obj) {
       if (obj.bold) {
-        modifiedText = <b key={i}>{text}</b>;
+        modifiedText = <b key={index}>{text}</b>;
       }
       if (obj.italic) {
-        modifiedText = <em key={i}>{text}</em>;
+        modifiedText = <em key={index}>{text}</em>;
       }
       if (obj.underline) {
-        modifiedText = <u key={i}>{text}</u>;
+        modifiedText = <u key={index}>{text}</u>;
       }
     }
 
@@ -100,8 +100,7 @@ function PostDetail({ post }) {
           </div>
         </div>
 
-        <h1 className="mb-8 text-3l font-semibold">{post.title}</h1>
-        {console.log(post.content.raw)}
+        <h1 className="mb-8 text-3l font-semibold text-2xl">{post.title}</h1>
         {post.content.raw.children.map((typeObj, i) => {
           const children = typeObj.children.map((item, i) =>
             getContentFragment(i, item.text, item)

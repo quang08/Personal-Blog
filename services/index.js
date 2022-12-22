@@ -197,3 +197,31 @@ export const getCategoryPost = async (slug) => {
 
   return result.postSConnection.edges;
 };
+
+export const getProjects = async () => {
+  const query = gql`
+    query GetProjects {
+      projectsConnection {
+        edges {
+          node {
+            createdAt
+            slug
+            title
+            excerpt
+            featuredImage {
+              url
+            }
+            categories {
+              name
+              slug
+            }
+          }
+        }
+      }
+    }
+  `;
+
+  const result = await request(graphqlAPI, query);
+
+  return result.projectsConnection.edges;
+};

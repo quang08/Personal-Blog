@@ -13,6 +13,8 @@ function About() {
           <div className="flex justify-center">
             <Image
               unoptimized
+              priority
+              alt='profile pic'
               src={coffee}
               width={360}
               height={360}
@@ -23,17 +25,17 @@ function About() {
           <h1 className="font-bold text-6xl lg:mt-20 mt-10">
             I'm Quang. I live in Hanoi, where I design the future.
           </h1>
-          <p className="mt-10">
+          <div className="mt-10">
             <div>
               I've loved making things for as long as I can remember, as a child
               i would always use cardboards as crafting materials and build out
-              props from movies like Iron Man's helmet, Minecraft sword.
+              divrops from movies like the Iron Man's helmet or Minecraft sword.
             </div>
 
             <div className="mt-4">
               The only thing that intrigued me more than crafting was
               technology. When i was 8, my mom gifted me an Ipod Touch 4th
-              Generation and I was hooked. It was fascinating to me how i can
+              Generation and I was hooked. It was fascinating to me how i could
               use my fingers to interact with the device, rather than the
               conventional clunky keyboard.
             </div>
@@ -50,7 +52,7 @@ function About() {
               Today, I'm a Computer Science undergraduate. I love to build
               applications, coffee talks and play basketball.
             </div>
-          </p>
+          </div>
         </div>
 
         <div className="lg:hidden text-xl mt-10 w-3/5">

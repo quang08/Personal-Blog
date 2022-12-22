@@ -87,7 +87,7 @@ const categoryCarousel = () => {
           categories.map((category, index) => (
             
             <Link key={index} href={`/category/${category.slug}`}>
-              <span className="relative align-middle text-center rounded-full px-3 py-3 text-sm bg-gray-200 transition hover:bg-blue-400">
+              <span className="relative align-middle text-center rounded-full px-3 py-3 text-sm bg-gray-200 transition duration-300 hover:bg-blue-400">
                 {category.name}
               </span>
             </Link>

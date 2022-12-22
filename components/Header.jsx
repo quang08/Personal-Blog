@@ -16,7 +16,7 @@ function Header() {
 
         <div className="md:float-left md:contents mt-4 text-lg">
           <Link href="/projects">
-            <span className="md:float-right mt-2 align-middle text-black ml-2 lg:ml-4  font-semibold cursor-pointer hover:border-b-2 border-gray-400">
+            <span className="md:float-right mt-2 align-middle text-black md:ml-4 lg:ml-4  font-semibold cursor-pointer hover:border-b-2 border-gray-400">
               Projects
             </span>
           </Link>

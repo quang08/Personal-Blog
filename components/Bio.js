@@ -20,7 +20,7 @@ function Bio() {
       </div>
 
       <p className="text-sm text-gray-600">
-        I'm a Computer Science undergrad based in Hanoi, Vietnam.Here you'll
+        I'm a Computer Science undergrad based in Hanoi, Vietnam. Here you'll
         find my personal blog posts, projects, case studies and all things tech.
       </p>
     </div>

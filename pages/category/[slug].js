@@ -1,9 +1,13 @@
 import React from "react";
 import { useRouter } from "next/router";
-import { Categories, Loader, PostCard } from "../../components";
-import { getCategories, getCategoryPost } from "../../services";
+import { Categories, Loader, PostCard, ProjectCard } from "../../components";
+import {
+  getCategories,
+  getCategoryPost,
+  getCategoryProject,
+} from "../../services";
 
-const CategoryPost = ({ posts }) => {
+const CategoryPost = ({ posts, projects }) => {
   const router = useRouter();
 
   if (router.isFallback) {
@@ -16,6 +20,9 @@ const CategoryPost = ({ posts }) => {
         <div className="col-span-1 lg:col-span-8">
           {posts.map((post, i) => (
             <PostCard key={i} post={post.node} />
+          ))}
+          {projects.map((project, i) => (
+            <ProjectCard key={i} project={project.node}/>
           ))}
         </div>
 
@@ -33,9 +40,10 @@ export default CategoryPost;
 
 export async function getStaticProps({ params }) {
   const posts = await getCategoryPost(params.slug);
+  const projects = await getCategoryProject(params.slug);
 
   return {
-    props: { posts },
+    props: { posts, projects },
   };
 }
 

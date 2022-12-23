@@ -225,3 +225,60 @@ export const getProjects = async () => {
 
   return result.projectsConnection.edges;
 };
+
+export const getProjectDetails = async (slug) => {
+  const query = gql`
+    query GetProjectDetails($slug: String!) {
+      project(where: { slug: $slug }) {
+        title
+        excerpt
+        featuredImage {
+          url
+        }
+        createdAt
+        slug
+        content {
+          raw
+        }
+        categories {
+          name
+          slug
+        }
+      }
+    }
+  `;
+
+  const result = await request(graphqlAPI, query, { slug });
+
+  return result.project;
+};
+
+export const getCategoryProject = async (slug) => {
+  const query = gql`
+    query GetCategoryProject($slug: String!) {
+      projectsConnection(where: { categories_some: { slug: $slug } }) {
+        edges {
+          node {
+            createdAt
+            slug
+            title
+            excerpt
+            featuredImage {
+              url
+            }
+            categories {
+              name
+              slug
+            }
+          }
+        }
+      }
+    }
+  `;
+
+  const result = await request(graphqlAPI, query, { slug });
+
+  return result.projectsConnection.edges;
+};
+
+

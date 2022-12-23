@@ -58,7 +58,7 @@ function ProjectCard({ project }) {
   </div> */}
 
       <p className="flex justify-start text-left text-lg text-gray-700 font-normal px-1 mb-5">
-        {project.excerpt}
+        {project.excerpt.substring(0,200)}...
       </p>
 
       <div className="text-left font-medium mb-5 transition duration-500 ease transform hover:-translate-y-1  hover:text-blue-400">

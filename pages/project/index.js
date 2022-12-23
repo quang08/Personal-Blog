@@ -7,9 +7,9 @@ export default function Projects({ projects }) {
   return (
     <div className="container mx-auto px-10 mb-8">
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-3">
-          {projects.map((project, i) => (
-            <ProjectCard key={i} project={project.node} />
-          ))}
+        {projects.map((project, i) => (
+          <ProjectCard key={i} project={project.node} />
+        ))}
       </div>
     </div>
   );

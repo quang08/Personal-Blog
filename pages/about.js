@@ -57,7 +57,11 @@ function About() {
 
         <div className="lg:hidden text-xl mt-10 w-full dark:bg-white dark:text-black p-5 rounded-lg">
           <div className="mb-2">
-            <a href="https://github.com/quang08" target="_blank"  rel="noreferrer">
+            <a
+              href="https://github.com/quang08"
+              target="_blank"
+              rel="noreferrer"
+            >
               <svg
                 className="inline w-6 h-6 mr-5"
                 xmlns="http://www.w3.org/2000/svg"
@@ -143,11 +147,16 @@ function About() {
               src={coffee}
               width={460}
               height={460}
+              alt="profile"
               className="rounded-lg"
             />
             <div className="text-xl mt-10">
               <div className="mb-2 dark:text-white">
-                <a href="https://github.com/quang08" target="_blank">
+                <a
+                  href="https://github.com/quang08"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <svg
                     className="inline w-6 h-6 mr-5"
                     xmlns="http://www.w3.org/2000/svg"
@@ -168,6 +177,7 @@ function About() {
                 <a
                   href="https://www.linkedin.com/in/nguyen-the-quang-b8285a227/"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   <svg
                     className="inline w-6 h-6 mr-5"
@@ -183,7 +193,8 @@ function About() {
               <div className="mb-2">
                 <a
                   href="https://www.instagram.com/_nguyenthequang_/"
-                  target="_fblank"
+                  target="_blank"
+                  rel="noreferrer"
                 >
                   <svg
                     className="inline w-6 h-6 mr-5"
@@ -200,6 +211,7 @@ function About() {
                 <a
                   href="https://www.facebook.com/profile.php?id=100006804880414"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   <svg
                     className="inline w-6 h-6 mr-5"

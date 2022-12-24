@@ -10,7 +10,7 @@ function Categories() {
   }, []);
 
   return (
-    <div className="bg-white shadow-xl rounded-xl p-8 pb-12 mb-8">
+    <div className="dark:bg-gray-800/50 bg-white shadow-xl rounded-xl p-8 pb-12 mb-8">
       <h3 className="text-xl mb-8 font-semibold border-b pb-4">Categories</h3>
 
       {categories.map((cat, i) => (

@@ -58,7 +58,7 @@ function ProjectDetail({ project }) {
   };
 
   return (
-    <div className="bg-white shadow-xl rounded-lg lg:p-8 pb-12 mb-8">
+    <div className="dark:bg-gray-800/50  bg-white shadow-xl rounded-lg lg:p-8 pb-12 mb-8">
       <div className="relative overflow-hidden shadow-md mb-6">
         <img
           src={project.featuredImage.url}
@@ -68,7 +68,7 @@ function ProjectDetail({ project }) {
       </div>
       <div className="px-4 lg:px-0">
         <div className="flex items-center mb-8 w-full">
-          <div className="font-medium text-gray-700">
+          <div className="dark:text-gray-400 font-medium text-gray-700">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
@@ -86,9 +86,9 @@ function ProjectDetail({ project }) {
               {moment(project.createdAt).format("MMM DD, YYYY")}
             </span>
             {project.github && (
-              <span className="ml-4 align-middle text-md font-medium transition duration-300 hover:text-blue-400">
+              <span className="ml-4 align-middle text-md font-medium transition duration-300 hover:text-blue-400 dark:bg-white rounded-lg p-2 dark:text-black dark:hover:text-blue-400">
                 <svg
-                  className="align-middle w-5 inline mr-2"
+                  className="mb-0.5 align-middle w-5 inline mr-2"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 640 512"
                 >

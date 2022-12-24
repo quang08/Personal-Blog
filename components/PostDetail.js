@@ -20,7 +20,10 @@ function PostDetail({ post }) {
     switch (type) {
       case "heading-three":
         return (
-          <h3 key={index} className="text-xl font-semilbold mb-4">
+          <h3
+            key={index}
+            className="text-xl font-semilbold mb-4 dark:text-gray-300"
+          >
             {modifiedText.map((item, i) => (
               <React.Fragment key={i}>{item}</React.Fragment>
             ))}
@@ -28,7 +31,7 @@ function PostDetail({ post }) {
         );
       case "paragraph":
         return (
-          <p key={index} className="mb-8">
+          <p key={index} className="mb-8 dark:text-gray-300">
             {modifiedText.map((item, i) => (
               <React.Fragment>{item}</React.Fragment>
             ))}
@@ -36,7 +39,10 @@ function PostDetail({ post }) {
         );
       case "heading-four":
         return (
-          <h4 key={index} className="text-md font-semibold mb-4">
+          <h4
+            key={index}
+            className="text-md font-semibold mb-4 dark:text-gray-300"
+          >
             {modifiedText.map((item, i) => (
               <React.Fragment>{item}</React.Fragment>
             ))}
@@ -58,7 +64,7 @@ function PostDetail({ post }) {
   };
 
   return (
-    <div className="bg-white shadow-xl rounded-lg lg:p-8 pb-12 mb-8">
+    <div className="dark:bg-black dark:shadow-gray-700 bg-white shadow-xl rounded-lg lg:p-8 pb-12 mb-8">
       <div className="relative overflow-hidden shadow-md mb-6">
         <img
           src={post.featuredImage.url}
@@ -76,11 +82,11 @@ function PostDetail({ post }) {
               className="align-middle rounded-full"
               src={post.author.photo.url}
             />
-            <p className="inline align-middle text-gray-700 ml-2 font-medium text-lg">
+            <p className="dark:text-gray-400 inline align-middle text-gray-700 ml-2 font-medium text-lg">
               {post.author.name}
             </p>
           </div>
-          <div className="font-medium text-gray-700">
+          <div className="font-medium dark:text-gray-400 text-gray-700">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"

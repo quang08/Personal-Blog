@@ -19,7 +19,7 @@ function PostWidget({ categories, slug }) {
 
   return (
     //transition duration-300 hover:shadow-blue-400/40
-    <div className="bg-white shadow-xl rounded-xl p-8 pb-12 mb-8">
+    <div className="dark:bg-gray-800/50 bg-white shadow-xl rounded-xl p-8 pb-12 mb-8">
       <h3 className="text-xl mb-8 font-semibold border-b pb-4">
         {slug ? "Related Posts" : "Recent Posts"}
       </h3>
@@ -40,10 +40,13 @@ function PostWidget({ categories, slug }) {
           </div>
 
           <div className="flex-grow ml-4 transition duration-300 hover:text-blue-400">
-            <p className="text-gray-500 font xs">
+            <p className="text-gray-500 dark:text-white font xs">
               {moment(post.createdAt).format("MMM DD, YYYY")}
             </p>
-            <Link href={`/post/${post.slug}`} className="text-md">
+            <Link
+              href={`/post/${post.slug}`}
+              className="text-md dark:text-gray-400 dark:hover:text-blue-400"
+            >
               {post.title}
             </Link>
           </div>

@@ -1,17 +1,18 @@
-import '../styles/globals.scss'
+import "../styles/globals.scss";
 import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 config.autoAddCss = false;
+import { ThemeProvider } from "next-themes";
 
-
-import 'tailwindcss/tailwind.css'
-import { Layout } from '../components'
+import "tailwindcss/tailwind.css";
+import { Layout } from "../components";
 
 export default function App({ Component, pageProps }) {
   return (
-    <Layout>
-      <Component {...pageProps} />
-    </Layout>
-    
-  )
+    <ThemeProvider attribute="class">
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    </ThemeProvider>
+  );
 }

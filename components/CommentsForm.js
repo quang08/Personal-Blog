@@ -81,7 +81,7 @@ const CommentsForm = ({ slug }) => {
   };
 
   return (
-    <div className="bg-white shadow-lg rounded-lg p-8 pb-12 mb-8">
+    <div className="dark:bg-gray-800/50 bg-white shadow-lg rounded-lg p-8 pb-12 mb-8">
       <h3 className="text-xl mb-8 font-semibold border-b pb-4">
         Leave a Reply
       </h3>
@@ -89,7 +89,7 @@ const CommentsForm = ({ slug }) => {
         <textarea
           value={formData.comment}
           onChange={onInputChange}
-          className="p-4 outline-none w-full rounded-lg h-40 focus:ring-2 focus:ring-gray-200 bg-gray-100 text-gray-700"
+          className="p-4 outline-none w-full rounded-lg h-40 focus:ring-2 focus:ring-gray-200 bg-gray-100 text-gray-700 dark:bg-gray-700 dark:text-white"
           name="comment"
           placeholder="Comment"
         />
@@ -99,7 +99,7 @@ const CommentsForm = ({ slug }) => {
           type="text"
           value={formData.name}
           onChange={onInputChange}
-          className="py-2 px-4 outline-none w-full rounded-lg focus:ring-2 focus:ring-gray-200 bg-gray-100 text-gray-700"
+          className="dark:bg-gray-700 dark:text-white py-2 px-4 outline-none w-full rounded-lg focus:ring-2 focus:ring-gray-200 bg-gray-100 text-gray-700"
           placeholder="Name"
           name="name"
         />
@@ -107,7 +107,7 @@ const CommentsForm = ({ slug }) => {
           type="email"
           value={formData.email}
           onChange={onInputChange}
-          className="py-2 px-4 outline-none w-full rounded-lg focus:ring-2 focus:ring-gray-200 bg-gray-100 text-gray-700"
+          className="dark:bg-gray-700 dark:text-white py-2 px-4 outline-none w-full rounded-lg focus:ring-2 focus:ring-gray-200 bg-gray-100 text-gray-700"
           placeholder="Email"
           name="email"
         />
@@ -122,7 +122,10 @@ const CommentsForm = ({ slug }) => {
             name="storeData"
             value="true"
           />
-          <label className="text-gray-500 cursor-pointer" htmlFor="storeData">
+          <label
+            className="text-gray-500 dark:text-white cursor-pointer"
+            htmlFor="storeData"
+          >
             {" "}
             Save my name, email in this browser for the next time I comment.
           </label>
@@ -135,7 +138,8 @@ const CommentsForm = ({ slug }) => {
         <button
           type="button"
           onClick={handlePostSubmission}
-          className="bg-black transition duration-300 hover:bg-blue-400 text-white rounded-md px-8 py-3 cursor-pointer font-semibold">
+          className="dark:bg-blue-500 dark:text-white bg-black transition duration-300 hover:bg-blue-400 text-white rounded-md px-8 py-3 cursor-pointer font-semibold"
+        >
           Post Comment
         </button>
         {showSuccessMessage && (

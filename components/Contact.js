@@ -6,7 +6,7 @@ import Link from "next/link";
 
 function Contact({ categories, slug}) {
   return (
-    <div className="bg-white shadow-xl rounded-xl sm:p-8 sm:pb-12 mb-8">
+    <div className="dark:text-black bg-white shadow-xl rounded-xl sm:p-8 sm:pb-12 mb-8">
       <h1 className="text-2xl mb-8 font-semibold border-b pb-4">Contact Me</h1>
       <div className="mb-2 text-xl transition duration-300 hover:text-blue-400 hover:-translate-y-1">
         <a href="https://github.com/quang08" target="_blank">

@@ -5,7 +5,7 @@ import moment from "moment";
 
 function ProjectCard({ project }) {
   return (
-    <div className="bg-white transition duration-300 hover:-translate-y-2  shadow-2xl rounded-lg px-3 lg:p-8 pb-12 mb-8 md:py-2 sm:py-4">
+    <div className="dark:bg-gray-800/50 dark:shadow-gray-700 bg-white transition duration-300 hover:-translate-y-2  shadow-2xl rounded-lg px-3 lg:p-8 pb-12 mb-8 md:py-2 sm:py-4">
       <div className="relative shadow-md inline-block w-full h-60 lg:h-80 mb-6">
         <Image
           unoptimized
@@ -15,7 +15,7 @@ function ProjectCard({ project }) {
           src={project.featuredImage.url}
         />
       </div>
-      <div className="flex justify-between font-medium text-gray-700 mb-3 px-1">
+      <div className="dark:text-white flex justify-between font-medium text-gray-700 mb-3 px-1">
         <div>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -34,7 +34,7 @@ function ProjectCard({ project }) {
             {moment(project.createdAt).format("MMM DD, YYYY")}
           </span>
         </div>
-        <p className="ml-5 text-sm rounded-full inline transition duration-300 bg-gray-200 hover:bg-blue-400 px-2 py-2">
+        <p className="ml-5 dark:text-white dark:bg-gray-700 text-sm rounded-full inline transition duration-300 bg-gray-200 hover:bg-blue-400 px-2 py-2">
           {project.categories[0].name}
         </p>
       </div>
@@ -57,8 +57,8 @@ function ProjectCard({ project }) {
         </div>
   </div> */}
 
-      <p className="flex justify-start text-left text-lg text-gray-700 font-normal px-1 mb-5">
-        {project.excerpt.substring(0,200)}...
+      <p className="dark:text-gray-400 flex justify-start text-left text-lg text-gray-700 font-normal px-1 mb-5">
+        {project.excerpt.substring(0, 200)}...
       </p>
 
       <div className="text-left font-medium mb-5 transition duration-500 ease transform hover:-translate-y-1  hover:text-blue-400">

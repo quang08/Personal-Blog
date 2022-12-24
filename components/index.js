@@ -12,6 +12,7 @@ export { default as Bio } from "./Bio";
 export { default as ProjectCard } from "./ProjectCard";
 export { default as ProjectDetail } from "./ProjectDetail";
 export { default as Contact } from "./Contact";
+export { default as Button } from "./Button";
 
 
 

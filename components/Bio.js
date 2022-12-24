@@ -7,6 +7,7 @@ function Bio() {
     <div className="container dark:bg-gray-800/50  bg-white shadow-lg rounded-lg p-8 pb-12 mb-8">
       <div className="mb-8 border-b pb-4">
         <Image
+          alt="Profile"
           className="inline rounded-full"
           width={40}
           height={40}

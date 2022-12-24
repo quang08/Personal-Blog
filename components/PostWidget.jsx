@@ -13,6 +13,7 @@ function PostWidget({ categories, slug }) {
     } else {
       getRecentPosts().then((res) => setRelatedPosts(res));
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [slug]);
 
   console.log(relatedPosts);

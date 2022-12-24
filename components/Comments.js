@@ -11,6 +11,7 @@ function Comments({ slug }) {
     getComments(slug).then((res) => {
       setComments(res);
     });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (

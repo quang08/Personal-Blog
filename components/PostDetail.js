@@ -33,7 +33,7 @@ function PostDetail({ post }) {
         return (
           <p key={index} className="mb-8 dark:text-gray-300">
             {modifiedText.map((item, i) => (
-              <React.Fragment>{item}</React.Fragment>
+              <React.Fragment key={i}>{item}</React.Fragment>
             ))}
           </p>
         );
@@ -44,7 +44,7 @@ function PostDetail({ post }) {
             className="text-md font-semibold mb-4 dark:text-gray-300"
           >
             {modifiedText.map((item, i) => (
-              <React.Fragment>{item}</React.Fragment>
+              <React.Fragment key={i}>{item}</React.Fragment>
             ))}
           </h4>
         );

@@ -9,7 +9,7 @@ function Contact({ categories, slug}) {
     <div className="dark:text-black bg-white shadow-xl rounded-xl sm:p-8 sm:pb-12 mb-8">
       <h1 className="text-2xl mb-8 font-semibold border-b pb-4">Contact Me</h1>
       <div className="mb-2 text-xl transition duration-300 hover:text-blue-400 hover:-translate-y-1">
-        <a href="https://github.com/quang08" target="_blank">
+        <a href="https://github.com/quang08" target="_blank" rel="noreferrer">
           <svg
             className="inline w-6 h-6 mr-5"
             xmlns="http://www.w3.org/2000/svg"
@@ -25,6 +25,7 @@ function Contact({ categories, slug}) {
         <a
           href="https://www.linkedin.com/in/nguyen-the-quang-b8285a227/"
           target="_blank"
+          rel="noreferrer"
         >
           <svg
             className="inline w-6 h-6 mr-5"
@@ -38,7 +39,11 @@ function Contact({ categories, slug}) {
       </div>
 
       <div className="mb-2 text-xl transition duration-300 hover:text-blue-400 hover:-translate-y-1">
-        <a href="https://www.instagram.com/_nguyenthequang_/" target="_fblank">
+        <a
+          href="https://www.instagram.com/_nguyenthequang_/"
+          target="_blank"
+          rel="noreferrer"
+        >
           <svg
             className="inline w-6 h-6 mr-5"
             xmlns="http://www.w3.org/2000/svg"
@@ -54,6 +59,7 @@ function Contact({ categories, slug}) {
         <a
           href="https://www.facebook.com/profile.php?id=100006804880414"
           target="_blank"
+          rel="noreferrer"
         >
           <svg
             className="inline w-6 h-6 mr-5"

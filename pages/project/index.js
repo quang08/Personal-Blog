@@ -17,7 +17,7 @@ export default function Projects({ projects }) {
 }
 
 export async function getStaticProps() {
-  const projects = (await getProjects()) || [];
+  const projects = await getProjects()
 
   return {
     props: { projects },

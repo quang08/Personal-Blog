@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import { ProjectCard } from "../../components";
 import { getProjects } from "../../services";
+import React from "react";
 
 export default function Projects({ projects }) {
   return (

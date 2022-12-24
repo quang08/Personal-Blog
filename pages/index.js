@@ -3,6 +3,7 @@ import Image from "next/image";
 import { PostCard, PostWidget, Categories, Header, Bio } from "../components";
 import { getPosts } from "../services";
 import { CategoryCarousel } from "../sections/index";
+import React from "react";
 
 export default function Home({ posts }) {
   return (

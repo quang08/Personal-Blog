@@ -17,7 +17,7 @@ function Comments({ slug }) {
   return (
     <>
       {comments.length > 0 && (
-        <div className="dark:bg-black dark:shadow-gray-700 bg-white shadow-lg  rounded-lg p-8 pb-12 mb-8">
+        <div className="dark:bg-gray-800/50 dark:shadow-gray-700 bg-white shadow-lg  rounded-lg p-8 pb-12 mb-8">
           <h3 className="text-xl mb-8 font-semibold border-b pb-4">
             {comments.length} {comments.length > 1 ? "Comments" : "Comment"}
           </h3>

@@ -1,5 +1,6 @@
 import React from "react";
 import moment from "moment";
+import Image from "next/image";
 
 function ProjectDetail({ project }) {
   const getContentFragment = (index, text, obj, type) => {
@@ -44,7 +45,8 @@ function ProjectDetail({ project }) {
         );
       case "image":
         return (
-          <img
+          <Image
+            unoptimized
             key={index}
             alt={obj.title}
             height={obj.height}
@@ -60,7 +62,10 @@ function ProjectDetail({ project }) {
   return (
     <div className="dark:bg-gray-800/50  bg-white shadow-xl rounded-lg lg:p-8 pb-12 mb-8">
       <div className="relative overflow-hidden shadow-md mb-6">
-        <img
+        <Image
+          unoptimized
+          height={100}
+          width={100}
           src={project.featuredImage.url}
           alt={project.title}
           className="object-top h-full w-full rounded-t-lg"

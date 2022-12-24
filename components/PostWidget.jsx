@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { getRecentPosts, getSimilarPosts } from "../services";
 import moment from "moment";
 import Link from "next/link";
+import Image from "next/image";
 
 function PostWidget({ categories, slug }) {
   const [relatedPosts, setRelatedPosts] = useState([]);
@@ -31,10 +32,10 @@ function PostWidget({ categories, slug }) {
           className="flex items-center w-full mb-4 transition duration-300 hover:-translate-y-1"
         >
           <div className="w-16 flex-none">
-            <img
+            <Image
               alt={post.tile}
-              height="60px"
-              width="60px"
+              height={60}
+              width={60}
               src={post.featuredImage.url}
               className="align-middle rounded-sm"
             />

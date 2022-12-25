@@ -12,7 +12,7 @@ function ProjectCard({ project }) {
           alt={project.title}
           className="shadow-lg rounded-t-lg lg:rounded-lg"
           layout="fill"
-          src={project.featuredImage.url}
+          src={project.featuredImage[0].url}
         />
       </div>
       <div className="dark:text-white flex justify-between font-medium text-gray-700 mb-3 px-1">

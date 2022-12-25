@@ -216,6 +216,7 @@ export const getProjects = async () => {
               slug
             }
             github
+            live
           }
         }
       }
@@ -246,6 +247,7 @@ export const getProjectDetails = async (slug) => {
           slug
         }
         github
+        live
       }
     }
   `;

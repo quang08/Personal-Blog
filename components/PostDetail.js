@@ -1,6 +1,26 @@
 import React from "react";
 import moment from "moment";
 import Image from "next/image";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+
+const responsive = {
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: 1,
+    slidesToSlide: 1, // optional, default to 1.
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 464 },
+    items: 1,
+    slidesToSlide: 1, // optional, default to 1.
+  },
+  mobile: {
+    breakpoint: { max: 464, min: 0 },
+    items: 1,
+    slidesToSlide: 1, // optional, default to 1.
+  },
+};
 
 function PostDetail({ post }) {
   const getContentFragment = (index, text, obj, type) => {
@@ -68,15 +88,28 @@ function PostDetail({ post }) {
   return (
     <div className="dark:bg-gray-800/50 dark:shadow-gray-700 bg-white shadow-xl rounded-lg lg:p-8 pb-12 mb-8">
       <div className="relative overflow-hidden shadow-md mb-6">
-        <Image
-          unoptimized
-          height={30}
-          width={30}
-          src={post.featuredImage.url}
-          alt={post.title}
-          className="object-top h-full w-full rounded-t-lg"
-        />
+        <Carousel
+          infinite
+          swipeable={true}
+          draggable={true}
+          keyBoardControl={true}
+          responsive={responsive}
+          itemClass="px-4 align-center"
+          className="h-90 py-4"
+        >
+          {post.featuredImage.map((post, i) => (
+            <Image
+              unoptimized
+              height={30}
+              width={30}
+              src={post.url}
+              alt={i}
+              className="object-top h-full w-full rounded-t-lg"
+            />
+          ))}
+        </Carousel>
       </div>
+
       <div className="px-4 lg:px-0">
         <div className="flex items-center mb-8 w-full">
           <div className="hidden md:flex items-center justify-center lg:mb-0 lg:w-auto mr-8 items-center">

@@ -36,7 +36,7 @@ function PostWidget({ categories, slug }) {
               alt={post.tile}
               height={60}
               width={60}
-              src={post.featuredImage.url}
+              src={post.featuredImage[0].url}
               className="align-middle rounded-sm"
             />
           </div>

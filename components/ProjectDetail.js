@@ -82,15 +82,15 @@ function ProjectDetail({ project }) {
 
   return (
     <div className="dark:bg-gray-800/50  bg-white shadow-xl rounded-lg lg:p-8 pb-12 mb-8">
-      <div className="relative overflow-hidden shadow-md mb-6">
+      <div className="relative overflow-hidden shadow-none mb-6 py-2 px-2">
         <Carousel
           infinite
           swipeable={true}
           draggable={true}
           keyBoardControl={true}
           responsive={responsive}
-          itemClass="px-4 align-center"
-          className="h-90 py-4"
+          itemClass="align-center"
+          className="h-90"
         >
           {project.featuredImage.map((project, i) => (
             <Image

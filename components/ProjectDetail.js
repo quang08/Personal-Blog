@@ -95,6 +95,7 @@ function ProjectDetail({ project }) {
           {project.featuredImage.map((project, i) => (
             <Image
               unoptimized
+              key={i}
               height={30}
               width={30}
               src={project.url}

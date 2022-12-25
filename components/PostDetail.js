@@ -99,6 +99,7 @@ function PostDetail({ post }) {
         >
           {post.featuredImage.map((post, i) => (
             <Image
+              key={i}
               unoptimized
               height={30}
               width={30}

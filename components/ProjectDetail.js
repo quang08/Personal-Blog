@@ -48,6 +48,22 @@ function ProjectDetail({ project }) {
             ))}
           </h3>
         );
+      case "heading-two":
+        return (
+          <h2 key={index} className="text-xl font-semilbold mb-4">
+            {modifiedText.map((item, i) => (
+              <React.Fragment key={i}>{item}</React.Fragment>
+            ))}
+          </h2>
+        );
+      case "heading-one":
+        return (
+          <h1 key={index} className="text-xl font-semilbold mb-4">
+            {modifiedText.map((item, i) => (
+              <React.Fragment key={i}>{item}</React.Fragment>
+            ))}
+          </h1>
+        );
       case "paragraph":
         return (
           <p key={index} className="mb-8">

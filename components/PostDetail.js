@@ -50,6 +50,22 @@ function PostDetail({ post }) {
             ))}
           </h3>
         );
+      case "heading-two":
+        return (
+          <h2 key={index} className="text-xl font-semilbold mb-4">
+            {modifiedText.map((item, i) => (
+              <React.Fragment key={i}>{item}</React.Fragment>
+            ))}
+          </h2>
+        );
+      case "heading-one":
+        return (
+          <h1 key={index} className="text-xl font-semilbold mb-4">
+            {modifiedText.map((item, i) => (
+              <React.Fragment key={i}>{item}</React.Fragment>
+            ))}
+          </h1>
+        );
       case "paragraph":
         return (
           <p key={index} className="mb-8 dark:text-gray-300">
@@ -88,31 +104,42 @@ function PostDetail({ post }) {
   return (
     <div className="dark:bg-gray-800/50 dark:shadow-gray-700 bg-white shadow-xl rounded-lg lg:p-8 pb-12 mb-8">
       <div className="relative overflow-hidden shadow-none mb-6 py-2 px-2">
-        <Carousel
-          infinite
-          swipeable={true}
-          draggable={true}
-          keyBoardControl={true}
-          responsive={responsive}
-          itemClass="px-4 align-center"
-          className="h-90 py-4"
-        >
-          {post.featuredImage.map((post, i) => (
-            <Image
-              key={i}
-              unoptimized
-              height={30}
-              width={30}
-              src={post.url}
-              alt={i}
-              className="object-top h-full w-full rounded-t-lg"
-            />
-          ))}
-        </Carousel>
+        {post.featuredImage.length > 1 ? (
+          <Carousel
+            infinite
+            swipeable={true}
+            draggable={true}
+            keyBoardControl={true}
+            responsive={responsive}
+            itemClass="align-center"
+            className="h-90"
+          >
+            {post.featuredImage.map((post, i) => (
+              <Image
+                unoptimized
+                key={i}
+                height={30}
+                width={30}
+                src={post.url}
+                alt={i}
+                className="object-top h-full w-full rounded-t-lg"
+              />
+            ))}
+          </Carousel>
+        ) : (
+          <Image
+            unoptimized
+            height={30}
+            width={30}
+            src={post.featuredImage[0].url}
+            alt={post.title}
+            className="object-top h-full w-full rounded-t-lg"
+          />
+        )}
       </div>
 
       <div className="px-4 lg:px-0">
-        <div className="flex items-center mb-8 w-full">
+        <div className="flex items-center mb-1 w-full">
           <div className="hidden md:flex items-center justify-center lg:mb-0 lg:w-auto mr-8 items-center">
             <Image
               unoptimized
@@ -146,7 +173,9 @@ function PostDetail({ post }) {
           </div>
         </div>
 
-        <h1 className="mb-8 text-3l font-semibold text-2xl">{post.title}</h1>
+        <h1 className="mb-8 text-3l font-semibold text-2xl border-b-4 dark:border-b-gray-400 py-8">
+          {post.title}
+        </h1>
         {post.content.raw.children.map((typeObj, i) => {
           const children = typeObj.children.map((item, i) =>
             getContentFragment(i, item.text, item)

@@ -66,7 +66,7 @@ function ProjectDetail({ project }) {
         );
       case "paragraph":
         return (
-          <p key={index} className="mb-8">
+          <p key={index} className="mb-4">
             {modifiedText.map((item, i) => (
               <React.Fragment key={i}>{item}</React.Fragment>
             ))}
@@ -99,30 +99,41 @@ function ProjectDetail({ project }) {
   return (
     <div className="dark:bg-gray-800/50  bg-white shadow-xl rounded-lg lg:p-8 pb-12 mb-8">
       <div className="relative overflow-hidden shadow-none mb-6 py-2 px-2">
-        <Carousel
-          infinite
-          swipeable={true}
-          draggable={true}
-          keyBoardControl={true}
-          responsive={responsive}
-          itemClass="align-center"
-          className="h-90"
-        >
-          {project.featuredImage.map((project, i) => (
-            <Image
-              unoptimized
-              key={i}
-              height={30}
-              width={30}
-              src={project.url}
-              alt={i}
-              className="object-top h-full w-full rounded-t-lg"
-            />
-          ))}
-        </Carousel>
+        {project.featuredImage.length > 1 ? (
+          <Carousel
+            infinite
+            swipeable={true}
+            draggable={true}
+            keyBoardControl={true}
+            responsive={responsive}
+            itemClass="align-center"
+            className="h-90"
+          >
+            {project.featuredImage.map((project, i) => (
+              <Image
+                unoptimized
+                key={i}
+                height={30}
+                width={30}
+                src={project.url}
+                alt={i}
+                className="object-top h-full w-full rounded-t-lg"
+              />
+            ))}
+          </Carousel>
+        ) : (
+          <Image
+            unoptimized
+            height={30}
+            width={30}
+            src={project.featuredImage[0].url}
+            alt={project.title}
+            className="object-top h-full w-full rounded-t-lg"
+          />
+        )}
       </div>
       <div className="px-4 lg:px-0">
-        <div className="flex items-center mb-8 w-full">
+        <div className="flex items-center mb-1 w-full">
           <div className="dark:text-gray-400 font-medium text-gray-700">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -171,8 +182,9 @@ function ProjectDetail({ project }) {
           </div>
         </div>
 
-        <h1 className="mb-8 text-3l font-semibold text-2xl">{project.title}</h1>
-        {console.log(project.github)}
+        <h1 className="mb-8 text-3l font-semibold text-2xl border-b-4 py-8 dark:border-b-gray-400">
+          {project.title}
+        </h1>
         {project.content.raw.children.map((typeObj, i) => {
           const children = typeObj.children.map((item, i) =>
             getContentFragment(i, item.text, item)

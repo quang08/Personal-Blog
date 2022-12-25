@@ -8,7 +8,7 @@ import { getCategories } from "../services";
 const responsive = {
   superLargeDesktop: {
     breakpoint: { max: 4000, min: 1024 },
-    items: 5,
+    items: 4,
   },
   desktop: {
     breakpoint: { max: 1024, min: 768 },

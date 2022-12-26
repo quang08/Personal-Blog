@@ -4,6 +4,19 @@ As someone who loves to share and talk, I have always loved blogging. Having tri
 
 ## [Live site](https://thequang.vercel.app/)
 
+## Features
+- Add/Delete content with assets (urls/images/files)
+- Readers can comment on posts/projects. Comments will be rendered if authorized by adminstrator
+- Dynamically-rendred creation date of content
+- Support togglable Themes
+- Find desired content by searching through categories
+
+### Tech Stack
+- NextJS for SSG (Static Site Generation)
+- TailwindCSS for styling
+- GraphCMS as Content Management System
+- GraphQL
+
 ## Preview
 
 ### 1. Projects Page

@@ -81,7 +81,7 @@ const categoryCarousel = () => {
         customRightArrow={customRightArrow}
         responsive={responsive}
         itemClass="px-4 align-center"
-        className="h-40"
+        className="h-40 "
       >
         {dataLoaded &&
           categories.map((category, index) => (

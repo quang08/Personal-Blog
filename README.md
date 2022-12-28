@@ -1,34 +1,35 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Personal Blog
 
-## Getting Started
+As someone who loves to share and talk, I have always loved blogging. Having tried many blog platforms, I decided to build one on my own. With my portfolio and blog posts, I hope this project can be where I share my thoughts to the world.
 
-First, run the development server:
+## [Live site](https://thequang.vercel.app/)
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+## Features
+- Add/Delete content with assets (urls/images/files)
+- Readers can comment on posts/projects. Comments will be rendered if authorized by adminstrator
+- Dynamically-rendred creation date of content
+- Support togglable Themes
+- Find desired content by searching through categories
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Tech Stack
+- NextJS for SSG (Static Site Generation)
+- TailwindCSS for styling
+- GraphCMS as Content Management System
+- GraphQL
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Preview
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+### 1. Projects Page
+<img width="594" alt="5" src="https://user-images.githubusercontent.com/84165564/209536316-bb29c455-4579-4f6c-8ffb-ec8386756aea.png">
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+### 2. About Page
+<img width="594" alt="5" src="https://user-images.githubusercontent.com/84165564/209535951-40f61c50-796a-4478-b7eb-dfdf57a12f73.PNG">
 
-## Learn More
+### 3. Home Page
+<img width="594" alt="5" src="https://user-images.githubusercontent.com/84165564/209536322-7ecf650e-1dcb-481d-adf9-19405ad89cde.png">
 
-To learn more about Next.js, take a look at the following resources:
+### 4. Individual Blog Page
+<img width="594" alt="6" src="https://user-images.githubusercontent.com/84165564/209535971-ee5206aa-c632-4c53-8ade-5f58ebbfbe3a.PNG">
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### 5. Comment Section and Sidebar
+<img width="594" alt="7" src="https://user-images.githubusercontent.com/84165564/209535974-1a65e1d7-ffc3-43b7-9be1-0ecd8925f2e5.PNG">

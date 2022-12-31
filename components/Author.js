@@ -23,7 +23,7 @@ function Author({ author }) {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 export default Author;

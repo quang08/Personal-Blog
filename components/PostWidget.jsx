@@ -21,7 +21,7 @@ function PostWidget({ categories, slug }) {
 
   return (
     //transition duration-300 hover:shadow-blue-400/40
-    <div className="dark:bg-gray-800/50 bg-white shadow-xl rounded-xl p-8 pb-12 mb-8">
+    <div className="dark:bg-neutral-900 dark:shadow-neutral-800 bg-white shadow-xl rounded-xl p-8 pb-12 mb-8">
       <h3 className="text-xl mb-8 font-semibold border-b pb-4">
         {slug ? "Related Posts" : "Recent Posts"}
       </h3>

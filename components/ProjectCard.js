@@ -5,7 +5,7 @@ import moment from "moment";
 
 function ProjectCard({ project }) {
   return (
-    <div className="dark:bg-gray-800/50 dark:shadow-gray-700 bg-white transition duration-300 hover:-translate-y-2  shadow-2xl rounded-lg px-3 lg:p-8 pb-12 mb-8 md:py-2 sm:py-4">
+    <div className="dark:bg-neutral-900 dark:shadow-neutral-700 bg-white transition duration-300 hover:-translate-y-2  shadow-2xl rounded-lg px-3 lg:p-8 pb-12 mb-8 md:py-2 sm:py-4">
       <div className="relative shadow-md inline-block w-full h-60 lg:h-80 mb-6">
         <Image
           unoptimized
@@ -34,7 +34,7 @@ function ProjectCard({ project }) {
             {moment(project.createdAt).format("MMM DD, YYYY")}
           </span>
         </div>
-        <p className="ml-5 dark:text-white dark:bg-gray-700 text-sm rounded-full inline transition duration-300 bg-gray-200 hover:bg-blue-400 px-2 py-2">
+        <p className="ml-5 dark:text-white dark:bg-neutral-700 text-sm rounded-full inline transition duration-300 bg-gray-200 hover:bg-blue-400 px-2 py-2">
           {project.categories[0].name}
         </p>
       </div>

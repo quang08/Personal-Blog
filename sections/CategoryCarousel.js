@@ -36,7 +36,7 @@ const categoryCarousel = () => {
     }, []);
 
   const customLeftArrow = (
-    <div className="flex justify-center absolute arrow-btn left-0 text-center py-3 cursor-pointer bg-gray-400 rounded-full">
+    <div className="flex justify-center absolute arrow-btn left-0 text-center py-3 cursor-pointer bg-gray-400 dark:bg-neutral-800 rounded-full">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
@@ -55,7 +55,7 @@ const categoryCarousel = () => {
   );
 
   const customRightArrow = (
-    <div className="flex justify-center absolute arrow-btn right-0 text-center py-3 cursor-pointer bg-gray-400 rounded-full">
+    <div className="flex justify-center absolute arrow-btn right-0 text-center py-3 cursor-pointer bg-gray-400 dark:bg-neutral-800 rounded-full">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
@@ -85,9 +85,8 @@ const categoryCarousel = () => {
       >
         {dataLoaded &&
           categories.map((category, index) => (
-            
             <Link key={index} href={`/category/${category.slug}`}>
-              <span className="carousel relative align-middle text-center rounded-full px-3 py-3 text-sm bg-gray-200 dark:text-white dark:bg-gray-700 text-black transition duration-300 hover:bg-blue-400 ">
+              <span className="carousel relative align-middle text-center rounded-full px-3 py-3 text-sm bg-gray-200 dark:text-white dark:bg-neutral-800 text-black transition duration-300 hover:bg-blue-400 ">
                 {category.name}
               </span>
             </Link>

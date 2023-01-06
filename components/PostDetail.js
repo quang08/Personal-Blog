@@ -102,7 +102,7 @@ function PostDetail({ post }) {
   };
 
   return (
-    <div className="dark:bg-gray-800/50 dark:shadow-gray-700 bg-white shadow-xl rounded-lg lg:p-8 pb-12 mb-8">
+    <div className="dark:bg-neutral-900 dark:shadow-neutral-700 bg-white shadow-xl rounded-lg lg:p-8 pb-12 mb-8">
       <div className="relative overflow-hidden shadow-none mb-6 py-2 px-2">
         {post.featuredImage.length > 1 ? (
           <Carousel
@@ -140,7 +140,7 @@ function PostDetail({ post }) {
 
       <div className="px-4 lg:px-0">
         <div className="flex items-center mb-1 w-full">
-          <div className="hidden md:flex items-center justify-center lg:mb-0 lg:w-auto mr-8 items-center">
+          <div className="hidden md:flex items-center justify-center lg:mb-0 lg:w-auto mr-8">
             <Image
               unoptimized
               alt={post.author.name}

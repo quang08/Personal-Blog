@@ -28,14 +28,14 @@ function About() {
           <div className="mt-10">
             <div>
               I've loved making things for as long as I can remember, as a child
-              i would always use cardboards as crafting materials and build out
+              I would always use cardboards as crafting materials and build out
               divrops from movies like the Iron Man's helmet or Minecraft sword.
             </div>
 
             <div className="mt-4">
               The only thing that intrigued me more than crafting was
-              technology. When i was 8, my mom gifted me an Ipod Touch 4th
-              Generation and I was hooked. It was fascinating to me how i could
+              technology. When I was 8, my mom gifted me an Ipod Touch 4th
+              Generation and I was hooked. It was fascinating to me how I could
               use my fingers to interact with the device, rather than the
               conventional clunky keyboard.
             </div>

@@ -60,13 +60,13 @@ function Header() {
   return (
     <div className="container mx-auto px-10 mb-4">
       <div className="border-b w-full inline-block border-gray-400 md:py-6 py-2 md:flex justify-between items-center">
-        <div className="flex md:float-left block">
+        <div className="flex md:float-left block mb-10 md:mb-0">
           <Link href="/">
             <span className="cursor-pointer font-bold text-4xl">The Quang</span>
           </Link>
         </div>
 
-        <div className="md:float-left md:invisible visible text-lg py-4 md:py-0">
+        <div className="md:float-left md:invisible visible text-lg py- md:py-0">
           <Link href="/project">
             <span className="md:float-right  align-middle text-black dark:text-white md:ml-10 font-semibold cursor-pointer transition duration-300 hover:text-blue-400 dark:hover:text-blue-400 ">
               Projects
@@ -78,7 +78,7 @@ function Header() {
             </span>
           </Link>
           <Link href="/">
-            <span className="md:float-right  align-middle text-black dark:text-white md:mr-10 font-semibold cursor-pointer transition duration-300 hover:text-blue-400 dark:hover:text-blue-400">
+            <span className="md:float-right  align-middle text-black dark:text-white md:mr-10 font-semibold cursor-pointer transition duration-300 hover:text-blue-400 dark:hover:text-blue-400 mr-3">
               Articles
             </span>
           </Link>

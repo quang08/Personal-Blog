@@ -152,7 +152,7 @@ function ProjectDetail({ project }) {
               {moment(project.createdAt).format("MMM DD, YYYY")}
             </span>
             {project.github && (
-              <span className="ml-4 align-middle text-md font-medium transition duration-300 hover:text-blue-400 dark:bg-white rounded-lg p-2 dark:text-black dark:hover:text-blue-400">
+              <span className="ml-4 align-middle text-md font-medium transition duration-300 hover:text-blue-400 dark:bg-neutral-800 rounded-lg p-2 pr-3 dark:text-gray-400 dark:hover:text-blue-400">
                 <svg
                   className="mb-0.5 align-middle w-5 inline mr-2"
                   xmlns="http://www.w3.org/2000/svg"

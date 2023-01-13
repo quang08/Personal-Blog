@@ -68,7 +68,7 @@ function Header() {
   };
 
   return (
-    <div className="container mx-auto px-10 md:mb-4 mt-10 md:mt-0">
+    <div className="sticky top-0 z-50 md:static container mx-auto px-10 md:mb-4 mt-10 md:mt-0">
       <div className="md:border-b w-full inline-block border-gray-400 md:py-6 py-2 md:flex justify-between items-center">
         <div className="flex md:float-left block mb-10 md:mb-0 hidden md:inline-flex">
           <Link href="/">

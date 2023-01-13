@@ -5,9 +5,9 @@ import moment from "moment";
 
 function PostCard({ post }) {
   return (
-    <div className="dark:bg-neutral-900 dark:shadow-neutral-700 bg-white dark:text-white transition duration-300 hover:-translate-y-2  shadow-2xl rounded-lg px-3 lg:p-8 pb-12 mb-8 md:py-2 sm:py-4">
-      <div className="flex justify-between font-medium text-gray-700 dark:text-white mb-3 px-1">
-        <div>
+    <div className="dark:bg-neutral-900 dark:shadow-neutral-700 bg-white dark:text-white transition duration-300 hover:-translate-y-2 shadow-2xl rounded-lg px-3 lg:p-8 pb-5 mb-8 md:py-2 sm:py-4 ">
+      <div className="flex justify-between font-medium text-gray-700 dark:text-white mb-3 px-1 pt-7 lg:pt-3">
+        <div className='pt-2'>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"

@@ -5,7 +5,7 @@ import moment from "moment";
 
 function ProjectCard({ project }) {
   return (
-    <div className="dark:bg-neutral-900 dark:shadow-neutral-700 bg-white transition duration-300 hover:-translate-y-2  shadow-2xl rounded-lg px-3 lg:p-8 pb-12 mb-8 md:py-2 sm:py-4">
+    <div className="dark:bg-neutral-900 dark:shadow-neutral-700 bg-white transition duration-300 hover:-translate-y-2  shadow-2xl rounded-lg px-3 lg:p-8 pb-5 mb-8 md:py-2 sm:py-4 pt-7 lg:pt-3">
       <div className="relative shadow-md inline-block w-full h-60 lg:h-80 mb-6">
         <Image
           unoptimized
@@ -16,7 +16,7 @@ function ProjectCard({ project }) {
         />
       </div>
       <div className="dark:text-white flex justify-between font-medium text-gray-700 mb-3 px-1">
-        <div>
+        <div className='pt-2'>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"

@@ -25,9 +25,9 @@ function PostCard({ post }) {
             {moment(post.createdAt).format("MMM DD, YYYY")}
           </span>
         </div>
-        <p className="ml-5 dark:text-white dark:bg-neutral-700 text-sm rounded-full inline transition duration-300 bg-gray-200 hover:bg-blue-400 px-2 py-2">
-          {post.categories[0].name}
-        </p>
+          <p className="ml-5 cursor-pointer dark:text-white dark:bg-neutral-700 text-sm rounded-full inline transition duration-300 bg-gray-200 hover:bg-blue-400 px-2 py-2">
+            {post.categories[0].name}
+          </p>
       </div>
 
       <h1 className="transition duration-300  text-left text-3xl font-semibold mb-5 px-1 cursor-pointer hover:text-blue-400">

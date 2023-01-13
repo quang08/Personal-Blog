@@ -4,7 +4,7 @@ import Image from "next/image";
 
 function Bio() {
   return (
-    <div className="container dark:bg-neutral-900 dark:shadow-neutral-800  bg-white shadow-lg rounded-lg p-8 pb-12 mb-8">
+    <div className="container dark:bg-neutral-900 dark:shadow-neutral-800  bg-white shadow-lg rounded-lg p-8 pb-12 mb-8 hidden lg:inline-block">
       <div className="mb-8 border-b pb-4">
         <Image
           alt="Profile"

@@ -82,14 +82,14 @@ const CommentsForm = ({ slug }) => {
 
   return (
     <div className="dark:bg-neutral-900 dark:shadow-neutral-700 bg-white shadow-lg rounded-lg p-8 pb-12 mb-8">
-      <h3 className="text-xl mb-8 font-semibold border-b pb-4">
+      <h3 className="md:text-xl text-lg mb-8 font-semibold border-b pb-4">
         Leave a Reply
       </h3>
       <div className="grid grid-cols-1 gap-4 mb-4">
         <textarea
           value={formData.comment}
           onChange={onInputChange}
-          className="p-4 outline-none w-full rounded-lg h-40 focus:ring-2 focus:ring-gray-200 bg-gray-100 text-gray-700 dark:bg-neutral-800 dark:text-white"
+          className="p-4 outline-none w-full rounded-lg h-30 focus:ring-2 focus:ring-gray-200 bg-gray-100 text-gray-700 dark:bg-neutral-800 dark:text-white"
           name="comment"
           placeholder="Comment"
         />
@@ -123,7 +123,7 @@ const CommentsForm = ({ slug }) => {
             value="true"
           />
           <label
-            className="text-gray-500 dark:text-white cursor-pointer"
+            className="text-gray-500 text-sm ml-2 md:text-lg dark:text-white cursor-pointer"
             htmlFor="storeData"
           >
             {" "}
@@ -134,7 +134,7 @@ const CommentsForm = ({ slug }) => {
       {error && (
         <p className="text-xs text-red-500">All fields are mandatory</p>
       )}
-      <div className="mt-8">
+      <div className="mt-8 flex justify-center md:inline">
         <button
           type="button"
           onClick={handlePostSubmission}

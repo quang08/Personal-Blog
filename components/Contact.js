@@ -6,8 +6,10 @@ import Link from "next/link";
 
 function Contact({ categories, slug }) {
   return (
-    <div className="bg-white dark:bg-neutral-900  dark:shadow-neutral-800 dark:text-gray-400 shadow-xl rounded-xl sm:p-8 sm:pb-12 mb-8">
-      <h1 className="text-2xl mb-8 font-semibold border-b pb-4 dark:text-white">Contact Me</h1>
+    <div className="bg-white dark:bg-neutral-900  dark:shadow-neutral-800 dark:text-gray-400 shadow-xl rounded-xl p-8 sm:pb-12 mb-8">
+      <h1 className="text-2xl mb-8 font-semibold border-b pb-4 dark:text-white">
+        Contact Me
+      </h1>
       <div className="mb-2 text-xl transition duration-300 hover:text-blue-400 hover:-translate-y-1">
         <a href="https://github.com/quang08" target="_blank" rel="noreferrer">
           <svg
@@ -85,7 +87,7 @@ function Contact({ categories, slug }) {
       </div>
 
       <div className="mt-4 border-t-4">
-        <div className="mt-4 text-md flex">
+        <div className="mt-4 text-md flex transition duration-300 hover:text-blue-400 hover:-translate-y-1">
           <svg
             className="h-6 w-6 inline mr-5"
             xmlns="http://www.w3.org/2000/svg"
@@ -97,7 +99,7 @@ function Contact({ categories, slug }) {
             onClick={() =>
               (window.location = "mailto:nguyenthequang080203@gmail.com")
             }
-            className="align-middle inline hidden xl:inline-flex"
+            className="align-middle inline hidden xl:inline-flex "
           >
             Contact with Email
           </button>

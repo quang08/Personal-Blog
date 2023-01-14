@@ -22,7 +22,6 @@ const responsive = {
   },
 };
 
-
 function ProjectDetail({ project }) {
   const getContentFragment = (index, text, obj, type) => {
     let modifiedText = text;
@@ -66,7 +65,7 @@ function ProjectDetail({ project }) {
         );
       case "paragraph":
         return (
-          <p key={index} className="mb-4">
+          <p key={index} className="mb-4 text-sm md:text-lg">
             {modifiedText.map((item, i) => (
               <React.Fragment key={i}>{item}</React.Fragment>
             ))}
@@ -133,26 +132,29 @@ function ProjectDetail({ project }) {
         )}
       </div>
       <div className="px-4 lg:px-0">
-        <div className="flex items-center mb-1 w-full">
-          <div className="dark:text-gray-400 font-medium text-gray-700">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              className="inline mr-2 w-6 h-6"
-            >
-              <path d="M12.75 12.75a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM7.5 15.75a.75.75 0 100-1.5.75.75 0 000 1.5zM8.25 17.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM9.75 15.75a.75.75 0 100-1.5.75.75 0 000 1.5zM10.5 17.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM12 15.75a.75.75 0 100-1.5.75.75 0 000 1.5zM12.75 17.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM14.25 15.75a.75.75 0 100-1.5.75.75 0 000 1.5zM15 17.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM16.5 15.75a.75.75 0 100-1.5.75.75 0 000 1.5zM15 12.75a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM16.5 13.5a.75.75 0 100-1.5.75.75 0 000 1.5z" />
-              <path
-                fillRule="evenodd"
-                d="M6.75 2.25A.75.75 0 017.5 3v1.5h9V3A.75.75 0 0118 3v1.5h.75a3 3 0 013 3v11.25a3 3 0 01-3 3H5.25a3 3 0 01-3-3V7.5a3 3 0 013-3H6V3a.75.75 0 01.75-.75zm13.5 9a1.5 1.5 0 00-1.5-1.5H5.25a1.5 1.5 0 00-1.5 1.5v7.5a1.5 1.5 0 001.5 1.5h13.5a1.5 1.5 0 001.5-1.5v-7.5z"
-                clipRule="evenodd"
-              />
-            </svg>
-            <span className="align-middle">
-              {moment(project.createdAt).format("MMM DD, YYYY")}
-            </span>
+        <div className="flex mb-1 w-1/2 h-25 md:w-full md:h-auto">
+          <div className="dark:text-gray-400 font-medium text-gray-700 flex flex-col md:flex-row w-full gap-4 md:gap-1">
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                className="inline mr-2 w-6 h-6"
+              >
+                <path d="M12.75 12.75a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM7.5 15.75a.75.75 0 100-1.5.75.75 0 000 1.5zM8.25 17.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM9.75 15.75a.75.75 0 100-1.5.75.75 0 000 1.5zM10.5 17.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM12 15.75a.75.75 0 100-1.5.75.75 0 000 1.5zM12.75 17.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM14.25 15.75a.75.75 0 100-1.5.75.75 0 000 1.5zM15 17.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM16.5 15.75a.75.75 0 100-1.5.75.75 0 000 1.5zM15 12.75a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM16.5 13.5a.75.75 0 100-1.5.75.75 0 000 1.5z" />
+                <path
+                  fillRule="evenodd"
+                  d="M6.75 2.25A.75.75 0 017.5 3v1.5h9V3A.75.75 0 0118 3v1.5h.75a3 3 0 013 3v11.25a3 3 0 01-3 3H5.25a3 3 0 01-3-3V7.5a3 3 0 013-3H6V3a.75.75 0 01.75-.75zm13.5 9a1.5 1.5 0 00-1.5-1.5H5.25a1.5 1.5 0 00-1.5 1.5v7.5a1.5 1.5 0 001.5 1.5h13.5a1.5 1.5 0 001.5-1.5v-7.5z"
+                  clipRule="evenodd"
+                />
+              </svg>
+              <span className="align-middle text-sm md:text-lg">
+                {moment(project.createdAt).format("MMM DD, YYYY")}
+              </span>
+            </div>
+
             {project.github && (
-              <span className="ml-4 align-middle text-md font-medium transition duration-300 hover:text-blue-400 dark:bg-neutral-800 rounded-lg p-2 pr-3 dark:text-gray-400 dark:hover:text-blue-400">
+              <div className="md:ml-4 text-center align-middle text-xs md:text-md font-medium transition duration-300 hover:text-blue-400 dark:bg-neutral-800 rounded-lg p-2 pr-6 md:pr-5 dark:text-gray-400 dark:hover:text-blue-400">
                 <svg
                   className="mb-0.5 align-middle w-5 inline mr-2"
                   xmlns="http://www.w3.org/2000/svg"
@@ -161,12 +163,12 @@ function ProjectDetail({ project }) {
                   <path d="M579.8 267.7c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114L422.3 334.8c-31.5 31.5-82.5 31.5-114 0c-27.9-27.9-31.5-71.8-8.6-103.8l1.1-1.6c10.3-14.4 6.9-34.4-7.4-44.6s-34.4-6.9-44.6 7.4l-1.1 1.6C206.5 251.2 213 330 263 380c56.5 56.5 148 56.5 204.5 0L579.8 267.7zM60.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C74 372 74 321 105.5 289.5L217.7 177.2c31.5-31.5 82.5-31.5 114 0c27.9 27.9 31.5 71.8 8.6 103.9l-1.1 1.6c-10.3 14.4-6.9 34.4 7.4 44.6s34.4 6.9 44.6-7.4l1.1-1.6C433.5 260.8 427 182 377 132c-56.5-56.5-148-56.5-204.5 0L60.2 244.3z" />
                 </svg>
                 <a href={project.github} target="_blank" rel="noreferrer">
-                  Github Repo
+                  Repo
                 </a>
-              </span>
+              </div>
             )}
             {project.live && (
-              <span className="ml-4 align-middle text-md font-medium transition duration-300 hover:text-blue-400 dark:bg-white rounded-lg p-2 dark:text-black dark:hover:text-blue-400">
+              <div className="md:ml-4 text-center align-middle text-xs md:text-md font-medium transition duration-300 hover:text-blue-400 dark:bg-white rounded-lg p-2 pr-6 md:pr-5 dark:text-black dark:hover:text-blue-400">
                 <svg
                   className="mb-0.5 align-middle w-5 inline mr-2"
                   xmlns="http://www.w3.org/2000/svg"
@@ -175,9 +177,9 @@ function ProjectDetail({ project }) {
                   <path d="M579.8 267.7c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114L422.3 334.8c-31.5 31.5-82.5 31.5-114 0c-27.9-27.9-31.5-71.8-8.6-103.8l1.1-1.6c10.3-14.4 6.9-34.4-7.4-44.6s-34.4-6.9-44.6 7.4l-1.1 1.6C206.5 251.2 213 330 263 380c56.5 56.5 148 56.5 204.5 0L579.8 267.7zM60.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C74 372 74 321 105.5 289.5L217.7 177.2c31.5-31.5 82.5-31.5 114 0c27.9 27.9 31.5 71.8 8.6 103.9l-1.1 1.6c-10.3 14.4-6.9 34.4 7.4 44.6s34.4 6.9 44.6-7.4l1.1-1.6C433.5 260.8 427 182 377 132c-56.5-56.5-148-56.5-204.5 0L60.2 244.3z" />
                 </svg>
                 <a href={project.live} target="_blank" rel="noreferrer">
-                  Live Site
+                  Live
                 </a>
-              </span>
+              </div>
             )}
           </div>
         </div>

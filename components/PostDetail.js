@@ -68,7 +68,7 @@ function PostDetail({ post }) {
         );
       case "paragraph":
         return (
-          <p key={index} className="mb-8 dark:text-gray-300">
+          <p key={index} className="mb-8 text-sm md:text-lg dark:text-gray-300">
             {modifiedText.map((item, i) => (
               <React.Fragment key={i}>{item}</React.Fragment>
             ))}

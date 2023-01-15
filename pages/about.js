@@ -1,6 +1,4 @@
 import React from "react";
-import avatar from "../public/final.png";
-import beach from "../public/beach.png";
 import coffee from "../public/coffee.jpg";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

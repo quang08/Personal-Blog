@@ -54,7 +54,7 @@ function About() {
           </div>
         </div>
 
-        <div className="lg:hidden text-xl mt-10 w-full p-8 rounded-lg bg-neutral-300 dark:bg-neutral-800 dark:text-gray-400">
+        <div className="lg:hidden text-xl mt-10 w-full p-8 rounded-lg bg-white shadow-lg dark:bg-neutral-800 dark:shadow-lg dark:shadow-neutral-700 dark:text-gray-400">
           <div className="mb-2 hover:-translate-y-1 transition duration-300 hover:text-teal-400">
             <a
               href="https://github.com/quang08"

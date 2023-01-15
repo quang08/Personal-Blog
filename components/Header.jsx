@@ -66,7 +66,7 @@ function Header() {
   };
 
   return (
-    <div className="sticky top-0 z-50 md:static container mx-auto px-10 md:mb-4 mt-10 md:mt-0">
+    <div className="sticky top-0 z-50 md:static container mx-auto px-10 md:mb-4 mt-10 md:mt-0 opacity-100">
       <div className="md:border-b w-full inline-block border-gray-400 md:py-6 py-2 md:flex justify-between items-center">
         <div className="flex md:float-left block mb-10 md:mb-0 hidden md:inline-flex">
           <Link href="/">
@@ -92,7 +92,7 @@ function Header() {
 
             <Menu as="div" className="relative inline-block text-left">
               <div>
-                <Menu.Button className="dark:bg-neutral-800 dark:text-white inline-flex w-full justify-center rounded-md bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm hover:ring-2 hover:ring-gray-300">
+                <Menu.Button className="dark:bg-neutral-800 dark:text-white inline-flex w-full justify-center rounded-md bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm transition duration-300 hover:ring-2 hover:ring-teal-400">
                   Menu
                   <ChevronDownIcon
                     className="-mr-1 ml-2 h-5 w-5"
@@ -102,7 +102,7 @@ function Header() {
               </div>
               <Transition
                 as={Fragment}
-                enter="transition ease-out duration-100"
+                enter="transition ease-out duration-300"
                 enterFrom="transform opacity-0 scale-95"
                 enterTo="transform opacity-100 scale-100"
                 leave="transition ease-in duration-75"
@@ -117,7 +117,7 @@ function Header() {
                           href="/about"
                           className={classNames(
                             active ? "text-gray-900" : "text-gray-700",
-                            "block px-4 py-2 text-sm dark:text-white transition duration-300 hover:text-blue-400 dark:hover:text-blue-400 dark:hover:bg-neutral-700 hover:bg-gray-100"
+                            "block px-4 py-2 text-sm dark:text-white transition duration-300 hover:text-teal-400 dark:hover:text-teal-400 dark:hover:bg-neutral-700 hover:bg-gray-100"
                           )}
                         >
                           About
@@ -132,7 +132,7 @@ function Header() {
                             active
                               ? "bg-gray-100 text-gray-900"
                               : "text-gray-700",
-                            "block px-4 py-2 text-sm dark:text-white transition duration-300 hover:text-blue-400 dark:hover:text-blue-400 dark:hover:bg-neutral-700 hover:bg-gray-100"
+                            "block px-4 py-2 text-sm dark:text-white transition duration-300 hover:text-teal-400 dark:hover:text-teal-400 dark:hover:bg-neutral-700 hover:bg-gray-100"
                           )}
                         >
                           Projects
@@ -147,7 +147,7 @@ function Header() {
                             active
                               ? "bg-gray-100 text-gray-900"
                               : "text-gray-700",
-                            "block px-4 py-2 text-sm dark:text-white transition duration-300 hover:text-blue-400 dark:hover:text-blue-400 dark:hover:bg-neutral-700 hover:bg-gray-100"
+                            "block px-4 py-2 text-sm dark:text-white transition duration-300 hover:text-teal-400 dark:hover:text-teal-400 dark:hover:bg-neutral-700 hover:bg-gray-100"
                           )}
                         >
                           Articles
@@ -164,17 +164,17 @@ function Header() {
         <div className="md:visible invisible text-lg">
           <div className="flex items-center">
             <Link href="/project">
-              <span className="md:float-right  align-middle text-black dark:text-white md:ml-10 font-semibold cursor-pointer transition duration-300 hover:text-blue-400 dark:hover:text-blue-400 ">
+              <span className="md:float-right  align-middle text-black dark:text-white md:ml-10 font-semibold cursor-pointer transition duration-300 hover:text-teal-400 dark:hover:text-teal-400 ">
                 Projects
               </span>
             </Link>
             <Link href="/about">
-              <span className="md:float-right  align-middle text-black ml-3 mr-3 dark:text-white font-semibold cursor-pointer transition duration-300 hover:text-blue-400 dark:hover:text-blue-400">
+              <span className="md:float-right  align-middle text-black ml-3 mr-3 dark:text-white font-semibold cursor-pointer transition duration-300 hover:text-teal-400 dark:hover:text-teal-400">
                 About
               </span>
             </Link>
             <Link href="/">
-              <span className="md:float-right  align-middle text-black dark:text-white md:mr-3 font-semibold cursor-pointer transition duration-300 hover:text-blue-400 dark:hover:text-blue-400">
+              <span className="md:float-right  align-middle text-black dark:text-white md:mr-3 font-semibold cursor-pointer transition duration-300 hover:text-teal-400 dark:hover:text-teal-400">
                 Articles
               </span>
             </Link>

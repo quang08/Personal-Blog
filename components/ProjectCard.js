@@ -16,7 +16,7 @@ function ProjectCard({ project }) {
         />
       </div>
       <div className="dark:text-white flex justify-between font-medium text-gray-700 mb-3 px-1">
-        <div className='pt-2'>
+        <div className="pt-2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
@@ -34,12 +34,12 @@ function ProjectCard({ project }) {
             {moment(project.createdAt).format("MMM DD, YYYY")}
           </span>
         </div>
-        <p className="ml-5 dark:text-white dark:bg-neutral-700 text-sm rounded-full inline transition duration-300 bg-gray-200 hover:bg-blue-400 px-2 py-2">
+        <p className="ml-5 dark:text-white dark:bg-neutral-700 text-sm rounded-full inline transition duration-300 bg-gray-200 hover:text-teal-400 px-2 py-2">
           {project.categories[0].name}
         </p>
       </div>
 
-      <h1 className="transition duration-300 text-left text-3xl font-semibold mb-5 px-1 cursor-pointer hover:text-blue-400">
+      <h1 className="transition duration-300 text-left text-3xl font-semibold mb-5 px-1 cursor-pointer hover:text-teal-400">
         <Link href={`/project/${project.slug}`}>{project.title}</Link>
       </h1>
 
@@ -61,7 +61,7 @@ function ProjectCard({ project }) {
         {project.excerpt.substring(0, 200)}...
       </p>
 
-      <div className="text-left font-medium mb-5 transition duration-500 ease transform hover:-translate-y-1  hover:text-blue-400">
+      <div className="text-left font-medium mb-5 transition duration-500 ease transform hover:-translate-y-1  hover:text-teal-400">
         <Link href={`/project/${project.slug}`}>
           <span className="text-lg font-medium px-1 cursor-pointer inline-block">
             Continue Reading

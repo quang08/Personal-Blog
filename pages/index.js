@@ -15,9 +15,11 @@ export default function Home({ posts }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <CategoryCarousel/>
+      <div className="h-14 md:h-28">
+        <CategoryCarousel />
+      </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 mt-12 md:mt-5">
         <div className="lg:col-span-8 col-span-1">
           {posts.map((post, i) => (
             <PostCard key={i} post={post.node} />
@@ -25,7 +27,7 @@ export default function Home({ posts }) {
         </div>
         <div className="lg:col-span-4 col-span-1">
           <div className="lg:sticky relative top-8">
-            <Bio/>
+            <Bio />
             <PostWidget />
             <Categories />
           </div>

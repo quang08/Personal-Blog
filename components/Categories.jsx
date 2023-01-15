@@ -15,7 +15,7 @@ function Categories() {
 
       {categories.map((cat, i) => (
         <Link key={i} href={`/category/${cat.slug}`}>
-          <span className="cursor-pointer transition duration-300 hover:text-blue-400 hover:-translate-y-1 block pb-3 mb-3">
+          <span className="cursor-pointer transition duration-300 hover:text-teal-400 hover:-translate-y-1 block pb-3 mb-3">
             {cat.name}
           </span>
         </Link>

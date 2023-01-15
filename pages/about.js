@@ -57,7 +57,7 @@ function About() {
         </div>
 
         <div className="lg:hidden text-xl mt-10 w-full p-8 rounded-lg bg-neutral-300 dark:bg-neutral-800 dark:text-gray-400">
-          <div className="mb-2">
+          <div className="mb-2 hover:-translate-y-1 transition duration-300 hover:text-teal-400">
             <a
               href="https://github.com/quang08"
               target="_blank"
@@ -74,7 +74,7 @@ function About() {
             </a>
           </div>
 
-          <div className="mb-2">
+          <div className="mb-2 hover:-translate-y-1 transition duration-300 hover:text-teal-400">
             <a
               href="https://www.linkedin.com/in/nguyen-the-quang-b8285a227/"
               target="_blank"
@@ -91,7 +91,7 @@ function About() {
             </a>
           </div>
 
-          <div className="mb-2">
+          <div className="mb-2 hover:-translate-y-1 transition duration-300 hover:text-teal-400">
             <a
               href="https://www.instagram.com/_nguyenthequang_/"
               target="_fblank"
@@ -108,7 +108,7 @@ function About() {
             </a>
           </div>
 
-          <div>
+          <div className="hover:-translate-y-1 transition duration-300 hover:text-teal-400">
             <a
               href="https://www.facebook.com/profile.php?id=100006804880414"
               target="_blank"
@@ -125,7 +125,7 @@ function About() {
             </a>
           </div>
 
-          <div className="lg:hidden mt-4 border-t-4">
+          <div className="lg:hidden mt-4 border-t-4 hover:-translate-y-1 transition duration-300 hover:text-teal-400">
             <div className="mt-4 text-xl">
               <svg
                 className="h-6 w-6 inline mr-5"
@@ -134,14 +134,14 @@ function About() {
               >
                 <path d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z" />
               </svg>
-               <button
-                  onClick={() =>
-                    (window.location = "mailto:nguyenthequang080203@gmail.com")
-                  }
-                  className="align-middle inline"
-                >
-                  Contact with Email
-                </button>
+              <button
+                onClick={() =>
+                  (window.location = "mailto:nguyenthequang080203@gmail.com")
+                }
+                className="align-middle inline"
+              >
+                Contact with Email
+              </button>
             </div>
           </div>
         </div>
@@ -157,7 +157,7 @@ function About() {
               className="rounded-lg"
             />
             <div className="text-xl mt-10">
-              <div className="mb-2">
+              <div className="mb-2 hover:-translate-y-1 transition duration-300 hover:text-teal-400">
                 <a
                   href="https://github.com/quang08"
                   target="_blank"
@@ -180,7 +180,7 @@ function About() {
                 </a>
               </div>
 
-              <div className="mb-2">
+              <div className="mb-2 hover:-translate-y-1 transition duration-300 hover:text-teal-400">
                 <a
                   href="https://www.linkedin.com/in/nguyen-the-quang-b8285a227/"
                   target="_blank"
@@ -200,7 +200,7 @@ function About() {
                 </a>
               </div>
 
-              <div className="mb-2">
+              <div className="mb-2 hover:-translate-y-1 transition duration-300 hover:text-teal-400">
                 <a
                   href="https://www.instagram.com/_nguyenthequang_/"
                   target="_blank"
@@ -220,7 +220,7 @@ function About() {
                 </a>
               </div>
 
-              <div>
+              <div className="hover:-translate-y-1 transition duration-300 hover:text-teal-400">
                 <a
                   href="https://www.facebook.com/profile.php?id=100006804880414"
                   target="_blank"
@@ -241,7 +241,7 @@ function About() {
               </div>
             </div>
 
-            <div className="lg:visible invisible mt-4 border-t-4">
+            <div className="lg:visible invisible mt-4 border-t-4 hover:-translate-y-1 transition duration-300 hover:text-teal-400">
               <div className="mt-4 text-xl">
                 <svg
                   className="h-6 w-6 inline mr-5"
@@ -268,9 +268,7 @@ function About() {
                 </button>
               </div>
             </div>
-
           </div>
-
         </div>
       </div>
     </div>

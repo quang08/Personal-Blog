@@ -25,12 +25,12 @@ function PostCard({ post }) {
             {moment(post.createdAt).format("MMM DD, YYYY")}
           </span>
         </div>
-          <p className="ml-5 cursor-pointer dark:text-white dark:bg-neutral-700 text-sm rounded-full inline transition duration-300 bg-gray-200 hover:bg-blue-400 px-2 py-2">
+          <p className="ml-5 cursor-pointer dark:text-white dark:bg-neutral-700 text-sm rounded-full inline transition duration-300 bg-gray-200 hover:bg-teal-400 px-2 py-2">
             {post.categories[0].name}
           </p>
       </div>
 
-      <h1 className="transition duration-300  text-left text-3xl font-semibold mb-5 px-1 cursor-pointer hover:text-blue-400">
+      <h1 className="transition duration-300  text-left text-3xl font-semibold mb-5 px-1 cursor-pointer hover:text-teal-400">
         <Link href={`/post/${post.slug}`}>{post.title}</Link>
       </h1>
 
@@ -53,7 +53,7 @@ function PostCard({ post }) {
         {post.excerpt}
       </p>
 
-      <div className="text-left font-medium mb-5 transition duration-500 ease transform hover:-translate-y-1  hover:text-blue-400">
+      <div className="text-left font-medium mb-5 transition duration-500 ease transform hover:-translate-y-1  hover:text-teal-400">
         <Link href={`/post/${post.slug}`}>
           <span className="text-lg font-medium px-1 cursor-pointer inline-block">
             Continue Reading

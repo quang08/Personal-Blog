@@ -41,13 +41,13 @@ function PostWidget({ categories, slug }) {
             />
           </div>
 
-          <div className="flex-grow ml-4 transition duration-300 hover:text-blue-400">
+          <div className="flex-grow ml-4 transition duration-300 hover:text-teal-400">
             <p className="text-gray-500 dark:text-white font xs">
               {moment(post.createdAt).format("MMM DD, YYYY")}
             </p>
             <Link
               href={`/post/${post.slug}`}
-              className="text-md dark:text-gray-400 dark:hover:text-blue-400"
+              className="text-md dark:text-gray-400 dark:hover:text-teal-400"
             >
               {post.title}
             </Link>

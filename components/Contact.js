@@ -10,10 +10,10 @@ function Contact({ categories, slug }) {
       <h1 className="text-2xl mb-8 font-semibold border-b pb-4 dark:text-white">
         Contact Me
       </h1>
-      <div className="mb-2 text-xl transition duration-300 hover:text-teal-400 hover:-translate-y-1">
+      <div className="mb-2 text-xl transition duration-300 hover:text-teal-400 hover:-translate-y-1 ">
         <a href="https://github.com/quang08" target="_blank" rel="noreferrer">
           <svg
-            className="inline w-6 h-6 mr-5"
+            className="inline w-6 h-6 mr-5 dark:fill-white"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 496 512"
           >
@@ -26,14 +26,14 @@ function Contact({ categories, slug }) {
         </a>
       </div>
 
-      <div className="mb-2 text-xl transition duration-300 hover:text-teal-400 hover:-translate-y-1">
+      <div className="mb-2 text-xl transition duration-300 hover:text-teal-400 hover:-translate-y-1 ">
         <a
           href="https://www.linkedin.com/in/nguyen-the-quang-b8285a227/"
           target="_blank"
           rel="noreferrer"
         >
           <svg
-            className="inline w-6 h-6 mr-5"
+            className="inline w-6 h-6 mr-5 dark:fill-white"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 448 512"
           >
@@ -46,14 +46,14 @@ function Contact({ categories, slug }) {
         </a>
       </div>
 
-      <div className="mb-2 text-xl transition duration-300 hover:text-teal-400 hover:-translate-y-1">
+      <div className="mb-2 text-xl transition duration-300 hover:text-teal-400 hover:-translate-y-1 ">
         <a
           href="https://www.instagram.com/_nguyenthequang_/"
           target="_blank"
           rel="noreferrer"
         >
           <svg
-            className="inline w-6 h-6 mr-5"
+            className="inline w-6 h-6 mr-5 dark:fill-white"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 448 512"
           >
@@ -66,14 +66,14 @@ function Contact({ categories, slug }) {
         </a>
       </div>
 
-      <div className="transition text-xl duration-300 hover:text-teal-400 hover:-translate-y-1">
+      <div className="transition text-xl duration-300 hover:text-teal-400 hover:-translate-y-1 ">
         <a
           href="https://www.facebook.com/profile.php?id=100006804880414"
           target="_blank"
           rel="noreferrer"
         >
           <svg
-            className="inline w-6 h-6 mr-5"
+            className="inline w-6 h-6 mr-5 dark:fill-white"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 320 512"
           >
@@ -86,10 +86,10 @@ function Contact({ categories, slug }) {
         </a>
       </div>
 
-      <div className="mt-4 border-t-4">
+      <div className="mt-4 border-t-4 ">
         <div className="mt-4 text-md flex transition duration-300 hover:text-teal-400 hover:-translate-y-1">
           <svg
-            className="h-6 w-6 inline mr-5"
+            className="h-6 w-6 inline mr-5 dark:fill-white"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 512 512"
           >

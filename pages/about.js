@@ -62,7 +62,7 @@ function About() {
               rel="noreferrer"
             >
               <svg
-                className="inline w-6 h-6 mr-5"
+                className="inline w-6 h-6 mr-5 dark:fill-white"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 496 512"
               >
@@ -79,7 +79,7 @@ function About() {
               rel="noreferrer"
             >
               <svg
-                className="inline w-6 h-6 mr-5"
+                className="inline w-6 h-6 mr-5 dark:fill-white"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 448 512"
               >
@@ -96,7 +96,7 @@ function About() {
               rel="noreferrer"
             >
               <svg
-                className="inline w-6 h-6 mr-5"
+                className="inline w-6 h-6 mr-5 dark:fill-white"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 448 512"
               >
@@ -113,7 +113,7 @@ function About() {
               rel="noreferrer"
             >
               <svg
-                className="inline w-6 h-6 mr-5"
+                className="inline w-6 h-6 mr-5 dark:fill-white"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 320 512"
               >
@@ -126,7 +126,7 @@ function About() {
           <div className="lg:hidden mt-4 border-t-4 hover:-translate-y-1 transition duration-300 hover:text-teal-400">
             <div className="mt-4 text-xl">
               <svg
-                className="h-6 w-6 inline mr-5"
+                className="h-6 w-6 inline mr-5 dark:fill-white"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 512 512"
               >
@@ -162,7 +162,7 @@ function About() {
                   rel="noreferrer"
                 >
                   <svg
-                    className="inline w-6 h-6 mr-5"
+                    className="inline w-6 h-6 mr-5 dark:fill-white"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 496 512"
                   >
@@ -185,7 +185,7 @@ function About() {
                   rel="noreferrer"
                 >
                   <svg
-                    className="inline w-6 h-6 mr-5"
+                    className="inline w-6 h-6 mr-5 dark:fill-white"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 448 512"
                   >
@@ -205,7 +205,7 @@ function About() {
                   rel="noreferrer"
                 >
                   <svg
-                    className="inline w-6 h-6 mr-5"
+                    className="inline w-6 h-6 mr-5 dark:fill-white"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 448 512"
                   >
@@ -225,7 +225,7 @@ function About() {
                   rel="noreferrer"
                 >
                   <svg
-                    className="inline w-6 h-6 mr-5"
+                    className="inline w-6 h-6 mr-5 dark:fill-white"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 320 512"
                   >
@@ -242,7 +242,7 @@ function About() {
             <div className="lg:visible invisible mt-4 border-t-4 hover:-translate-y-1 transition duration-300 hover:text-teal-400">
               <div className="mt-4 text-xl">
                 <svg
-                  className="h-6 w-6 inline mr-5"
+                  className="h-6 w-6 inline mr-5 dark:fill-white"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
                 >

@@ -154,9 +154,9 @@ function ProjectDetail({ project }) {
             </div>
 
             {project.github && (
-              <div className="md:ml-4 text-center align-middle text-xs md:text-md font-medium transition duration-300 hover:text-teal-400 dark:bg-neutral-800 rounded-lg p-2 pr-6 md:pr-5 dark:text-gray-400 dark:hover:text-teal-400">
+              <div className="md:ml-4 text-center align-middle text-xs md:text-md font-medium transition duration-300 hover:text-teal-400 dark:bg-neutral-800 rounded-lg p-2 pr-6 md:pr-5 dark:text-gray-200 dark:hover:bg-teal-400 hover:-translate-y-1">
                 <svg
-                  className="mb-0.5 align-middle w-5 inline mr-2"
+                  className="mb-0.5 align-middle w-5 inline mr-2 dark:fill-gray-400"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 640 512"
                 >
@@ -168,9 +168,9 @@ function ProjectDetail({ project }) {
               </div>
             )}
             {project.live && (
-              <div className="md:ml-4 text-center align-middle text-xs md:text-md font-medium transition duration-300 hover:text-teal-400 dark:bg-white rounded-lg p-2 pr-6 md:pr-5 dark:text-black dark:hover:text-teal-400">
+              <div className="md:ml-4 text-center align-middle text-xs md:text-md font-medium transition duration-300 hover:text-teal-400 dark:bg-neutral-800  rounded-lg p-2 pr-6 md:pr-5 dark:text-gray-200 dark:hover:bg-teal-400 hover:-translate-y-1">
                 <svg
-                  className="mb-0.5 align-middle w-5 inline mr-2"
+                  className="mb-0.5 align-middle w-5 inline mr-2 dark:fill-gray-400"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 640 512"
                 >

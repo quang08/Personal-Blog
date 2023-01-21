@@ -28,22 +28,23 @@ function About() {
             <div>
               I've loved making things for as long as I can remember, as a child
               I would always use cardboards as crafting materials and build out
-              divrops from movies like the Iron Man's helmet or Minecraft sword.
+              props from movies like the Iron Man's helmet or the Minecraft
+              sword.
             </div>
 
             <div className="mt-4">
               The only thing that intrigued me more than crafting was
-              technology. When I was 8, my mom gifted me an Ipod Touch 4th
-              Generation and I was hooked. It was fascinating to me how I could
-              use my fingers to interact with the device, rather than the
-              conventional clunky keyboard.
+              technology. When I was 8, my parents gifted me an Ipod Touch 4th
+              Generation. It was fascinating to me how I could use my fingers to
+              interact with the device, rather than the conventional clunky
+              keyboard, and I was hooked.
             </div>
 
             <div className="mt-4">
               I spent the next few summers, binging tech reviews on Youtube. But
               it was not until 2020 when I wrote my first line of code in
-              Python. After a few years of learning about myself, I reckoned it
-              would be best if I followed technology, as it has always been an
+              Python. After a few years of self-exploration, I reckoned it
+              would be best if I pursue technology, as it has always been an
               interest.
             </div>
 

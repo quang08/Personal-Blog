@@ -9,6 +9,8 @@ import Head from "next/head";
 import "tailwindcss/tailwind.css";
 import { Layout } from "../components";
 
+import { Analytics } from "@vercel/analytics/react";
+
 export default function App({ Component, pageProps }) {
   return (
     <>
@@ -18,12 +20,14 @@ export default function App({ Component, pageProps }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/Q.png" />
       </Head>
-      
+
       <ThemeProvider attribute="class">
         <Layout>
           <Component {...pageProps} />
         </Layout>
       </ThemeProvider>
+
+      <Analytics />
     </>
   );
 }
